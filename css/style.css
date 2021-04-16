@@ -123,7 +123,7 @@ a:hover {
 .d-bloc h5 a,
 .d-bloc h6 a,
 .d-bloc p a {
-  color: rgba(255, 255, 255, 0.6);
+  color: #333;
 }
 
 .d-bloc .a-btn:hover,
@@ -540,6 +540,7 @@ a[data-lightbox]:hover::before {
   z-index: 1;
   position: absolute;
   top: 50%;
+  left: 50%;
   transform: translateY(-50%);
   -webkit-transform: translateY(-50%);
 }
@@ -620,6 +621,7 @@ a[data-lightbox]:hover img {
 }
 
 .snapshot-lb .modal-body {
+  text-align: center;
   padding-bottom: 45px;
 }
 
@@ -678,7 +680,6 @@ a {
 
 .cta-hero {
   margin-top: 22px;
-  color: #ffffff !important;
   text-transform: uppercase;
   padding: 12px 28px 12px 28px;
   font-size: 16px;
@@ -686,8 +687,6 @@ a {
 }
 
 .social {
-  display: flex;
-  justify-content: space-between;
   max-width: 400px;
   margin: auto auto auto auto;
 }
@@ -741,7 +740,7 @@ h4 {
 }
 
 .black-background {
-  background-color: rgba(165, 147, 99, 0.7);
+  background-color: rgba(65, 62, 58, 0.6);
   padding: 40px 40px 40px 40px;
 }
 
@@ -755,7 +754,7 @@ h4 {
 }
 
 .bgc-dark-slate-blue {
-  background-color: #364577;
+  background-color: #2E3D81;
 }
 
 .bgc-atomic-tangerine {
@@ -763,17 +762,16 @@ h4 {
 }
 
 .tc-white {
+  position: relative;
   color: #f3976c !important;
 }
 
 .btn-atomic-tangerine {
   background: #f3976c;
-  color: #ffffff !important;
 }
 
 .btn-atomic-tangerine:hover {
   background: #c27956 !important;
-  color: #ffffff !important;
 }
 
 .ltc-white {
@@ -793,8 +791,8 @@ h4 {
 }
 
 .icon-dark-slate-blue {
-  color: #364577 !important;
-  border-color: #364577 !important;
+  color: #2E3D81 !important;
+  border-color: #2E3D81 !important;
 }
 
 .bg-dots-bg {
@@ -1020,6 +1018,10 @@ h4 {
     width: 180px;
     height: 320px;
   }
+  .social {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 
 @media (max-width: 425px) {
@@ -1028,11 +1030,11 @@ h4 {
     padding-right: 0;
   }
   .bg-banniere {
-    background-image: url("../img/bg_lca_425.jpg");
+    background-image: url("../img/bg_lca_600.jpg");
   }
   
   .bg-presentation {
-    background-image: url("../img/bg_presentation_425.jpg");
+    background-image: url("../img/bg_presentation_600.jpg");
   }
 }
 

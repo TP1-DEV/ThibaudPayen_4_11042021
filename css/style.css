@@ -574,7 +574,6 @@ a[data-lightbox]:hover img {
   position: absolute;
   left: 15px;
   right: 15px;
-  bottom: 5px;
 }
 
 .close-lightbox {
@@ -643,7 +642,7 @@ label,
 a {
   font-family: "helvetica";
   font-weight: 400;
-  color: #333 !important;
+  color: #333;
 }
 
 .container {
@@ -768,10 +767,6 @@ h4 {
 
 .btn-atomic-tangerine {
   background: #f3976c;
-}
-
-.btn-atomic-tangerine:hover {
-  background: #c27956 !important;
 }
 
 .ltc-white {

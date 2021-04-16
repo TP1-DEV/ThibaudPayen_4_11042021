@@ -2,7 +2,8 @@
 <html lang="fr">
   <head>
     <meta charset="utf-8" />
-    <meta name="keywords" content="agence entreprise web design webdesign france rhône-alpes lyon illustration graphisme stratégie marketting attractivité visibilité vente site internet" />
+    <meta name="robots" content="all">
+    <meta name="keywords" content="agence entreprise web design webdesign france rhône-alpes lyon illustration graphisme stratégie marketting attractivité visibilité vente site internet objectifs commerciaux meilleur graphistes talentueux élégance intégration développer succès local attirer nouveaux clients créatif identité visuelle référencement projets" />
     <meta name="title" content="La chouette agence - Création et design de site web - Lyon" />
     <meta name="description" content="De la création à la refonte complète de votre site internet, nous vous accompagnons dans la réalisation de vos projets web grâce à notre équipe d'experts" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
@@ -55,15 +56,15 @@
     <!-- Principal conteneur -->
     <div class="page-container">
       <!-- header bloc-0 -->
-      <header class="bloc bgc-white l-bloc" id="bloc-0">
+      <header class="bloc bgc-white l-bloc" id="bloc-0" role="banner">
         <div class="container bloc-sm">
-          <nav class="navbar row">
+          <nav class="navbar row" aria-label="navigation principale" role="navigation">
             <div class="navbar-header">
               <figure class="navbar-brand">
                 <img src="./img/lca.png" alt="Logo et nom La chouette agence" height="40" />
               </figure>
-              <button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-                <span class="sr-only">Toggle navigation</span>
+              <button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1" aria-controls="nav-toggle">
+                <span class="sr-only">Afficher navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -71,9 +72,9 @@
             </div>
             <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
               <ul class="site-navigation nav navbar-nav">
-                <li><a href="#bloc-2-services">Nos compétences</a></li>
-                <li><a href="#bloc-4-portfolio">Nos réalisations</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#bloc-2-services" aria-label="nos compétences">Nos compétences</a></li>
+                <li><a href="#bloc-4-portfolio" aria-label="nos réalisations">Nos réalisations</a></li>
+                <li><a href="contact.html" aria-label="contact">Contact</a></li>
               </ul>
             </div>
           </nav>
@@ -87,7 +88,7 @@
           <div class="container bloc-lg">
             <div class="row tight-width-whitespace">
               <div class="col-sm-12">
-                <img class="center-block image-resize-mode" src="./img/logo.png" alt="Logo La chouette agence" width="100" />
+                <img class="center-block image-resize-mode" src="./img/logo.png" alt="Logo de La chouette agence" width="100" aria-hidden="true" />
                 <h1 class="text-center hero-bloc-text tc-white">La chouette agence</h1>
               </div>
             </div>
@@ -105,21 +106,21 @@
             <div class="row voffset-lg med-width-whitespace">
               <article class="col-sm-4">
                 <div class="text-center">
-                  <span class="et-icon-browser sm-shadow icon-dark-slate-blue icons icon-lg"></span>
+                  <span class="et-icon-browser sm-shadow icon-dark-slate-blue icons icon-lg" aria-hidden="true"></span>
                 </div>
                 <h2 class="mg-md text-center">Web design</h2>
                 <p class="text-center">Que vous ayez un site web qui a besoin d'un rafraîchissement ou que vous partiez de zéro, laissez-nous vous réaliser un design dont vous serez fier.</p>
               </article>
               <article class="col-sm-4">
                 <div class="text-center">
-                  <span class="et-icon-presentation sm-shadow icon-dark-slate-blue icons icon-lg"></span>
+                  <span class="et-icon-presentation sm-shadow icon-dark-slate-blue icons icon-lg" aria-hidden="true"></span>
                 </div>
                 <h2 class="mg-md text-center">Stratégie</h2>
                 <p class="text-center">Plutôt que de suggérer des designs à la mode, nous travaillerons avec vous pour comprendre vos objectifs commerciaux afin de vous proposer le meilleur design possible.</p>
               </article>
               <article class="col-sm-4">
                 <div class="text-center">
-                  <span class="et-icon-edit sm-shadow icon-dark-slate-blue icons icon-lg"></span>
+                  <span class="et-icon-edit sm-shadow icon-dark-slate-blue icons icon-lg" aria-hidden="true"></span>
                 </div>
                 <h2 class="mg-md text-center">Illustrations</h2>
                 <p class="text-center">Un bon design n'est rien sans de bonnes illustrations. Laissez faire notre équipe de graphistes talentueux pour donner à vos pages une touche finale d'élégance.</p>
@@ -127,8 +128,10 @@
             </div>
             <div class="row voffset-lg voffset">
               <div class="col-xs-12 col-md-8 col-md-offset-2 text-center">
-                <q>La chouette agence est une excellente agence web ! Les web designers ont réussi à capturer l'essence de notre entreprise et à l'intégrer à notre site. Cela nous a aidé à doubler nos ventes en ligne à Lyon.</q>
-                <p>Maxime Guibard, PDG de À vos fourchettes</p>
+                <blockquote>
+                  <p>"La chouette agence est une excellente agence web ! Les web designers ont réussi à capturer l'essence de notre entreprise et à l'intégrer à notre site. Cela nous a aidé à doubler nos ventes en ligne à Lyon."</p>
+                  <cite>Maxime Guibard, PDG de À vos fourchettes</cite>
+                </blockquote>
               </div>
             </div>
           </div>
@@ -156,29 +159,29 @@
             </div>
             <div class="row tight-width-whitespace portfolio-row">
               <article class="col-sm-6">
-                <a href="./img/books.jpg" data-lightbox="./img/books.jpg" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb">
-                  <img src="./img/books.jpg" alt="image des livres" class="img-responsive portfolio-thumb" />
+                <a href="#" data-lightbox="./img/books.jpg" data-gallery-id="gallery-1" data-caption="Refonte d'un site web pour un journal local" data-frame="snapshot-lb">
+                  <img src="./img/books.jpg" alt="successions de livres empilés les uns sur les autres" class="img-responsive portfolio-thumb" />
                 </a>
                 <h3 class="mg-md text-center">Refonte d'un site web pour un journal local</h3>
                 <p class="text-center">Nous avons créé une nouvelle identité visuelle pour un journal lyonnais.</p>
               </article>
               <article class="col-sm-6">
-                <a href="./img/photograph.jpg" data-lightbox="./img/photograph.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb">
-                  <img src="./img/photograph.jpg" class="img-responsive portfolio-thumb" alt="image d'une photographe entrain de travailler" />
+                <a href="#" data-lightbox="./img/photograph.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site web pour photographes" data-frame="snapshot-lb">
+                  <img src="./img/photograph.jpg" class="img-responsive portfolio-thumb" alt="photographe en pleine pose avec son matériel" />
                 </a>
                 <h3 class="mg-md text-center">Création d'un site web pour photographes</h3>
                 <p class="text-center">Nous avons conçu la plateforme idéale pour laisser place aux clichés des photographes.</p>
               </article>
               <article class="col-sm-6">
-                <a href="./img/materiels.jpg" data-lightbox="./img/materiels.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb">
-                  <img src="./img/materiels.jpg" class="img-responsive portfolio-thumb" alt="image des materiels de photographie" />
+                <a href="#" data-lightbox="./img/materiels.jpg" data-gallery-id="gallery-1" data-caption="Création d'un site internet pour un voyageur" data-frame="snapshot-lb">
+                  <img src="./img/materiels.jpg" class="img-responsive portfolio-thumb" alt="ensemble de matériels de photographie" />
                 </a>
                 <h3 class="mg-md text-center">Création d'un site internet pour un voyageur</h3>
                 <p class="text-center">Nous avons élaboré un site internet et des illustrations pour sublimer les vidéos et les articles de ce voyageur.</p>
               </article>
               <article class="col-sm-6">
-                <a href="./img/work.jpg" data-lightbox="./img/work.jpg" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb">
-                  <img src="./img/work.jpg" class="img-responsive portfolio-thumb" alt="image fictive d'un bureau open space où deux personnes travaillent" />
+                <a href="#" data-lightbox="./img/work.jpg" data-gallery-id="gallery-1" data-caption="Conception d'un site pour une agence de mariage" data-frame="snapshot-lb">
+                  <img src="./img/work.jpg" class="img-responsive portfolio-thumb" alt="inspiration de coworking sur un projet" />
                 </a>
                 <h3 class="mg-md text-center">Conception d'un site pour une agence de mariage</h3>
                 <p class="text-center">Nous avons travaillé avec cette agence pour créer un site internet permettant la présentation détaillée de leurs prestations.</p>
@@ -201,8 +204,12 @@
         <!-- bloc-5-cta END -->
       </main>
 
+      <!-- ScrollToTop Button -->
+      <a class="bloc-button btn btn-d scrollToTop" onclick="scrollToTarget('1')"><span class="fa fa-chevron-up"></span></a>
+      <!-- ScrollToTop Button END-->
+
       <!-- Footer - bloc-8 -->
-      <footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8">
+      <footer class="bloc bgc-atomic-tangerine d-bloc" id="bloc-8" aria-label="contenu d'informations">
         <div class="container bloc-sm">
           <div class="row">
             <div class="col-sm-12">
@@ -210,28 +217,28 @@
               <div class="row row-no-gutters social">
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="twitter.com/lachouetteagence" title="twitter">
+                    <a class="social" href="#" title="twitter">
                       <span class="fa fa-twitter icon-md"></span>
                     </a>
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="facebook.com/lachouetteagence" title="facebook">
+                    <a class="social" href="#" title="facebook">
                       <span class="fa fa-facebook icon-md"></span>
                     </a>
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="dribbble.com/lachouetteagence" title="dribbble">
+                    <a class="social" href="#" title="dribbble">
                       <span class="fa fa-dribbble icon-md"></span>
                     </a>
                   </div>
                 </div>
                 <div class="col-sm-3">
                   <div class="text-center">
-                    <a class="social" href="instagram.com/lachouetteagence" title="instagram">
+                    <a class="social" href="#" title="instagram">
                       <span class="fa fa-instagram icon-md"></span>
                     </a>
                   </div>

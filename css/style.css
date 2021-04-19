@@ -10,7 +10,7 @@ body {
 a,
 button {
   transition: all 0.3s ease-in-out;
-  outline: none !important;
+  outline: none;
 }
 
 a:hover {
@@ -38,6 +38,10 @@ a:hover {
   padding: 100px 50px;
 }
 
+.bloc-lg-small {
+  padding: 50px;
+}
+
 .bloc-md {
   padding: 50px;
 }
@@ -56,10 +60,10 @@ a:hover {
 .bg-tr-edge,
 .bg-br-edge,
 .bg-repeat {
-  -webkit-background-size: auto !important;
-  -moz-background-size: auto !important;
-  -o-background-size: auto !important;
-  background-size: auto !important;
+  -webkit-background-size: auto;
+  -moz-background-size: auto;
+  -o-background-size: auto;
+  background-size: auto;
 }
 
 .bg-repeat {
@@ -188,10 +192,10 @@ a:hover {
   color: rgba(0, 0, 0, 0.5);
 } */
 
-.d-bloc .panel button:hover,
+/* .d-bloc .panel button:hover,
 .l-bloc button:hover {
   color: rgba(0, 0, 0, 0.7);
-}
+} */
 
 .l-bloc .icon-round,
 .l-bloc .icon-square,
@@ -333,7 +337,7 @@ a:hover {
 }
 
 .navbar-toggle:hover {
-  background: transparent !important;
+  background: transparent;
 }
 
 .navbar-toggle .icon-bar {
@@ -394,7 +398,7 @@ a:hover {
 }
 
 .nav > li > .dropdown a {
-  background: none !important;
+  background: none;
   display: block;
   padding: 14px 15px;
 }
@@ -421,7 +425,7 @@ nav .caret {
   border-top-color: transparent;
   border-right-color: transparent;
   border-bottom-color: transparent;
-  margin: 6px -5px 0 0 !important;
+  margin: 6px -5px 0 0;
   float: right;
 }
 
@@ -451,7 +455,7 @@ nav .caret {
 }
 
 button {
-  outline: none !important;
+  outline: none;
 }
 
 .btn-rd {
@@ -470,7 +474,7 @@ button {
 }
 
 .icon-lg {
-  font-size: 60px !important;
+  font-size: 60px;
 }
 
 .sm-shadow {
@@ -649,6 +653,10 @@ a {
   max-width: 1000px;
 }
 
+.title {
+  font-weight: bold;
+}
+
 .hero-bloc-text {
   font-size: 38px;
 }
@@ -699,7 +707,7 @@ h3 {
   font-size: 15px;
   text-transform: uppercase;
   font-weight: 700;
-  color: #333333 !important;
+  color: #333;
 }
 
 .med-width-whitespace {
@@ -709,11 +717,11 @@ h3 {
 }
 
 h1 {
-  color: #333333 !important;
+  color: #333333;
 }
 
 h4 {
-  color: #333333 !important;
+  color: #333333;
 }
 
 .icons {
@@ -722,7 +730,7 @@ h4 {
 }
 
 .white {
-  color: #ffffff !important;
+  color: #ffffff;
 }
 
 .portfolio-thumb {
@@ -745,7 +753,7 @@ h4 {
 
 .bold-link {
   font-weight: 900;
-  text-decoration: underline !important;
+  text-decoration: underline;
 }
 
 .bgc-white {
@@ -762,7 +770,7 @@ h4 {
 
 .tc-white {
   position: relative;
-  color: #f3976c !important;
+  color: #f3976c;
 }
 
 .btn-atomic-tangerine {
@@ -770,28 +778,24 @@ h4 {
 }
 
 .ltc-white {
-  color: #ffffff !important;
+  color: #ffffff;
 }
 
 .ltc-white:hover {
-  color: #cccccc !important;
+  color: #cccccc;
 }
 
 .ltc-atomic-tangerine {
-  color: #f3976c !important;
+  color: #f3976c;
 }
 
 .ltc-atomic-tangerine:hover {
-  color: #c27956 !important;
+  color: #c27956;
 }
 
 .icon-dark-slate-blue {
-  color: #2E3D81 !important;
-  border-color: #2E3D81 !important;
-}
-
-.bg-dots-bg {
-  background-image: url("../img/dots_bg.png");
+  color: #2E3D81;
+  border-color: #2E3D81;
 }
 
 .bg-lines-h2-bg {
@@ -835,13 +839,13 @@ h4 {
   }
 }
 
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
   .b-parallax {
     background-attachment: scroll;
   }
 }
 
-@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
+@media only screen and (min-width: 1024px) and (max-width: 1366px) and (-webkit-min-device-pixel-ratio: 1.5) {
   .b-parallax {
     background-attachment: scroll;
   }
@@ -859,20 +863,10 @@ h4 {
     overflow-x: hidden;
     position: relative;
   }
-  .bloc {
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
-  }
-  .bloc-group,
+    .bloc-group,
   .bloc-group .bloc {
     display: block;
     width: 100%;
-  }
-  .bloc-fill-screen .fill-bloc-top-edge,
-  .bloc-fill-screen .fill-bloc-bottom-edge {
-    padding: 0 20px;
-    padding-left: constant(safe-area-inset-left);
-    padding-right: constant(safe-area-inset-right);
   }
 }
 
@@ -889,8 +883,8 @@ h4 {
   h6,
   p,
   #disqus_thread {
-    padding-left: 10px !important;
-    padding-right: 10px !important;
+    padding-left: 10px;
+    padding-right: 10px;
   }
   .b-parallax {
     background-attachment: scroll;
@@ -898,7 +892,7 @@ h4 {
   .navbar .nav {
     padding-top: 0;
     border-top: 1px solid rgba(0, 0, 0, 0.2);
-    float: none !important;
+    float: none;
   }
   .navbar.row {
     margin-left: 0;
@@ -923,7 +917,7 @@ h4 {
   }
   .dropdown .dropdown a .caret {
     float: none;
-    margin: 5px 0 0 10px !important;
+    margin: 5px 0 0 10px;
     border: 4px solid black;
     border-bottom-color: transparent;
     border-right-color: transparent;

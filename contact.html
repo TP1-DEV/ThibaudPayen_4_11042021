@@ -53,9 +53,9 @@
     <!-- Principal conteneur -->
     <div class="page-container">
       <!-- header bloc-0 -->
-      <header class="bloc bgc-white l-bloc" id="bloc-0" role="banner">
+      <header class="bloc bgc-white l-bloc" id="bloc-0">
         <div class="container bloc-sm">
-          <nav class="navbar row" role="navigation">
+          <nav class="navbar row">
             <div class="navbar-header">
               <figure class="navbar-brand">
                 <img src="./img/lca.png" alt="Logo et nom La chouette agence" height="40" />
@@ -70,10 +70,10 @@
             <div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
               <ul class="site-navigation nav navbar-nav">
                 <li>
-                  <a href="index.html" aria-label="accueil">Accueil</a>
+                  <a class="title" href="index.html" aria-label="accueil">Accueil</a>
                 </li>
                 <li>
-                  <a href="#adress" aria-label="nous écrire">Nous écrire</a>
+                  <a class="title" href="#adress" aria-label="nous écrire">Nous écrire</a>
                 </li>
               </ul>
             </div>
@@ -83,13 +83,14 @@
       <!-- header bloc-0 END -->
       <main>
         <!-- section bloc-6 -->
-        <section class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture texture-paper" id="bloc-6">
-          <div class="container bloc-lg">
+        <section class="bloc bg-dots-bg bg-repeat bgc-atomic-tangerine d-bloc bloc-bg-texture" id="bloc-6">
+          <div class="container bloc-lg-small">
             <div class="row">
               <div class="col-sm-12">
-                <h1 class="text-center hero-bloc-text tc-white">Parlons web design !</h1>
-                <p class="text-center mg-lg tc-white tight-width-whitespace">Nous sommes ravis que vous souhaitiez collaborer avec notre agence.</p>
-                <p>Parlez-nous de votre projet en complétant le formulaire ci-dessous.</p>
+                <img class="center-block image-resize-mode" src="./img/logo.png" alt="Logo de La chouette agence" width="100" aria-hidden="true" />
+                <h1 class="text-center hero-bloc-text">Parlons web design !</h1>
+                <p class="text-center mg-lg tight-width-whitespace">Nous sommes ravis que vous souhaitiez collaborer avec notre agence.</p>
+                <p class="text-center">Parlez-nous de votre projet en complétant le formulaire ci-dessous.</p>
               </div>
             </div>
           </div>
@@ -97,14 +98,14 @@
         <!-- section bloc-6 END -->
 
         <!-- bloc-7 -->
-        <section class="bloc bgc-white l-bloc" id="bloc-7">
+        <div class="bloc bgc-white l-bloc" id="bloc-7">
           <div class="container bloc-lg">
             <div class="row">
               <div class="col-sm-6">
-                <form method="POST" action="form_1.php" id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+                <form method="POST" action="form_1.php" id="form_1" novalidate>
                   <div class="form-group" aria-labelledby="name">
                     <label for="name">Nom</label>
-                    <input id="name" class="form-control" required  placeholder="Votre Nom" aria-required="true" />
+                    <input id="name" class="form-control" required placeholder="Votre Nom" aria-required="true" />
                   </div>
                   <div class="form-group" aria-labelledby="email">
                     <label for="email">Adresse email</label>
@@ -112,18 +113,18 @@
                   </div>
                   <div class="form-group" aria-labelledby="input_504">
                     <label for="input_504">Comment nous avez-vous connu ?</label>
-                    <input class="form-control" type="email" required id="input_504" placeholder="Site, personne, publicité, recherche, autre..." aria-required="true"/>
+                    <input class="form-control" type="email" required id="input_504" placeholder="Site, personne, publicité, recherche, autre..." aria-required="true" />
                   </div>
-                  <div class="form-group" aria-labelledby="messsage">
+                  <div class="form-group" aria-labelledby="message">
                     <label for="message">Brief de votre projet (Ajoutez autant de détails que nécessaire)</label>
-                    <textarea id="message" class="form-control" rows="4" cols="50" required placeholder="Expliquer nous en détails votre projet" aria-required="true"></textarea>
+                    <textarea id="message" class="form-control" rows="4" cols="50" required placeholder="Expliquer nous en détails votre projet"></textarea>
                   </div>
                   <button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">Envoyer</button>
                 </form>
               </div>
               <div class="col-sm-6">
                 <address id="adress">
-                  <h2>La chouette Agence - Webdesign - Lyon</h2>
+                  <p class="title">La chouette Agence - Webdesign - Lyon</p>
                   <p>2 place Sathonay 69001 Lyon</p>
                   <p>01.02.03.04.05</p>
                   <p>Ouvert de 9h à 18h, du lundi au vendredi</p>
@@ -132,7 +133,7 @@
               </div>
             </div>
           </div>
-        </section>
+        </div>
         <!-- bloc-7 END -->
       </main>
 
@@ -145,7 +146,7 @@
         <div class="container bloc-sm">
           <div class="row">
             <div class="col-sm-12">
-              <p class="text-center">La chouette agence - Agence web basée à Lyon.</p>
+              <p class="text-center title">La chouette agence - Agence web basée à Lyon.</p>
               <div class="row row-no-gutters social">
                 <div class="col-sm-3">
                   <div class="text-center">

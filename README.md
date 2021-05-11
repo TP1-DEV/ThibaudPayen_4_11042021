@@ -22,7 +22,7 @@ Voici les points sur lesquels tu devras travailler :
 
 Voilà, je crois que j’ai fait le tour ! N’hésite pas si tu as la moindre question.
 
-Tu trouveras en pièce jointe une maquette de notre site en son état actuel.
+Tu trouveras en pièce jointe une maquette de notre site en son état actuel. => (cf initial branch)
 
 ## Compétences évaluées
 - Écrire un code HTML et CSS maintenable
